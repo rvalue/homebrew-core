@@ -68,6 +68,7 @@ class Flex < Formula
                           "--disable-silent-rules",
                           "--enable-shared"
     system "make", "install"
+    # TODO: install pkgconfig file
     bin.install_symlink "flex" => "lex"
   end
 
